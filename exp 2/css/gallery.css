@@ -1,0 +1,35 @@
+
+
+body {
+    text-align: center;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.gallery-grid figure {
+    margin: 0;
+}
+
+.gallery-grid img {
+    width: 300px;
+    height: 200px;
+    border: 3px solid #3cb371;
+    border-radius: 6px;
+    transition: transform 0.4s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #d6f5d6;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Farmer Registration</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="form.css">
+
+</head>
+<body>
+
+<header>
+    <h1>Farmer Registration Form</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a> | <a href="registration.html">Register</a>
+</nav>
+
+<br>
+
+<section>
+<form action="#" method="post">
+
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter full name" required autofocus><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"
+               placeholder="10-digit mobile number" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="name@example.com" required><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Farm Details</legend>
+
+        <label for="plotid">Plot ID:</label>
+        <input type="text" id="plotid" name="plotid" placeholder="e.g. KJS-P-101" required><br>
+
+        <label for="village">Village:</label>
+        <input type="text" id="village" name="village" placeholder="Enter village name"><br>
+
+        <label for="cropstage">Crop Stage:</label>
+        <select id="cropstage" name="cropstage">
+            <option value="germination">Germination</option>
+            <option value="tillering">Tillering</option>
+            <option value="grandgrowth">Grand Growth</option>
+            <option value="maturity">Maturity</option>
+        </select><br>
+
+        <label for="soiltype">Soil Type:</label>
+        <select id="soiltype" name="soiltype">
+            <option value="clay">Clay</option>
+            <option value="loamy">Loamy</option>
+            <option value="sandy">Sandy</option>
+        </select><br><br>
+
+        <label>Irrigation Method:</label>
+        <input type="radio" id="drip" name="irrigation" value="drip">
+        <label for="drip" style="width:auto;">Drip</label>
+        <input type="radio" id="sprinkler" name="irrigation" value="sprinkler">
+        <label for="sprinkler" style="width:auto;">Sprinkler</label>
+        <input type="radio" id="flood" name="irrigation" value="flood">
+        <label for="flood" style="width:auto;">Flood</label><br><br>
+
+        <label for="regdate">Date:</label>
+        <input type="date" id="regdate" name="regdate" required><br>
+
+        <label for="photo">Farm Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+    </fieldset>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear">
+
+</form>
+</section>
+
+<br>
+
+<footer style="text-align:center;">
+    <p>&copy; 2026 Smart Irrigation Advisory System.</p>
+</footer>
+
+</body>
+</html>
